@@ -1,0 +1,11 @@
+header {
+  width:100%;
+  display: flex;
+  align-content: space-between;
+  text-align: center;
+  justify-content: center;
+  background-color: lightskyblue;
+  border: 2px black solid;
+  flex-wrap: nowrap;
+}
+

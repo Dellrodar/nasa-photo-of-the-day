@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import GetAPODData from "./components/content";
-import Header from "./components/header";
+import GetAPODData from "./components/Content/content";
+import Header from "./components/Header/header";
 
 function App() {
   return (
