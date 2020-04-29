@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
 import GetAPODData from "./components/content";
+import Header from "./components/header";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Astronomy Picture of the Day</h1>
-      </header>
+      <Header />
       <GetAPODData />
     </div>
   );
