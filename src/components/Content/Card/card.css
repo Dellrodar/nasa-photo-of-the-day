@@ -1,4 +1,16 @@
-.cardContainer {
+.explaination {
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin:20px 10%;
+}
+
+.pictureSubtitle {
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 0px;
+  text-decoration: underline;
 }

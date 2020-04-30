@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import GetAPODData from "./components/Content/content";
-import Header from "./components/Header/header";
+import HeaderImage from "./components/Header/HeaderImage";
+import HeaderTitle from "./components/Header/HeaderTitle";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
+  const [date, setDate] = useState(new Date());
   return (
     <div className="App">
-      <Header />
-      <GetAPODData />
+      <header>
+        <HeaderImage />
+        <HeaderTitle />
+        <div className="datePicker">
+          <DatePicker
+            selected={date}
+            onChange={(date) => setDate(date)}
+            maxDate={new Date()}
+          />
+        </div>
+      </header>
+      <div>
+        <GetAPODData date={date} />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./card.css"
 
 
 function Card(props) {
@@ -7,7 +8,8 @@ function Card(props) {
             <h2>{props.card.title}</h2>
                 <p>&copy; {props.card.copyright} Date: {props.card.date} </p>
                 <img className = "mainContent" src={props.card.url} alt ="Astronomy Pic of the Day"/>
-                <p>{props.card.explanation}</p>
+                <h2 className = "pictureSubtitle">About this Photo</h2>
+                <p className = "explaination">{props.card.explanation}</p>
         </div>
     )
 }
