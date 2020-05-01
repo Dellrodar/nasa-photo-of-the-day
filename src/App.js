@@ -3,6 +3,7 @@ import "./App.css";
 import GetAPODData from "./components/Content/content";
 import HeaderImage from "./components/Header/HeaderImage";
 import HeaderTitle from "./components/Header/HeaderTitle";
+import Footer from "./components/Footer/footer";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -23,6 +24,9 @@ function App() {
       </header>
       <div>
         <GetAPODData date={date} />
+      </div>
+      <div className="footer-container">
+        <Footer />
       </div>
     </div>
   );

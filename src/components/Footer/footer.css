@@ -1,0 +1,16 @@
+footer  {
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.myName {
+    justify-items: flex-start;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-icons {
+    justify-items: flex-end;
+    vertical-align: middle;
+    justify-content: space-around;
+}

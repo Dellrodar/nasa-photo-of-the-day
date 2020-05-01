@@ -14,3 +14,8 @@
   margin: 10px 0px;
   text-decoration: underline;
 }
+
+.mainContent {
+  max-height: 35%;
+  max-width: 35%;
+}
